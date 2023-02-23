@@ -46,12 +46,6 @@ Please, check the documentation below to install and use the package
 https://ddd.thejano.com
 
 
-### Testing
-
-```bash
-composer test
-```
-
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
