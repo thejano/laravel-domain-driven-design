@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Usage | Laravel Domain Driven Design</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    
+    <meta name="description" content="Helps to use domain driven design within laravel">
+    <meta name="theme-color" content="#0b1003">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.300f369e.css" as="style"><link rel="preload" href="/assets/js/app.521e9afe.js" as="script"><link rel="preload" href="/assets/js/2.845378f6.js" as="script"><link rel="preload" href="/assets/js/16.e5045b3b.js" as="script"><link rel="prefetch" href="/assets/js/10.91370462.js"><link rel="prefetch" href="/assets/js/11.7ae92dc3.js"><link rel="prefetch" href="/assets/js/12.1b949fd3.js"><link rel="prefetch" href="/assets/js/13.d65d575f.js"><link rel="prefetch" href="/assets/js/14.bea1bdc8.js"><link rel="prefetch" href="/assets/js/15.d1e7aa94.js"><link rel="prefetch" href="/assets/js/17.90296a9c.js"><link rel="prefetch" href="/assets/js/3.8dfc125c.js"><link rel="prefetch" href="/assets/js/4.7271c9e7.js"><link rel="prefetch" href="/assets/js/5.3da2d6a2.js"><link rel="prefetch" href="/assets/js/6.8aca83c8.js"><link rel="prefetch" href="/assets/js/7.c139746f.js"><link rel="prefetch" href="/assets/js/8.c5fdb1dd.js"><link rel="prefetch" href="/assets/js/9.e7f84cc1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.300f369e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Laravel Domain Driven Design</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="https://github.com/thejano/laravel-domain-driven-design/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="https://github.com/thejano/laravel-domain-driven-design/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/guide/installation.html" class="sidebar-link">Installation</a></li><li><a href="/guide/usage.html" aria-current="page" class="active sidebar-link">Usage</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/usage.html#domain" class="sidebar-link">Domain</a></li><li class="sidebar-sub-header"><a href="/guide/usage.html#main-laravel-commands" class="sidebar-link">Main Laravel Commands</a></li><li class="sidebar-sub-header"><a href="/guide/usage.html#package-commands" class="sidebar-link">Package Commands</a></li><li class="sidebar-sub-header"><a href="/guide/usage.html#custom-commands" class="sidebar-link">Custom Commands</a></li></ul></li><li><a href="/guide/main-laravel-commands.html" class="sidebar-link">Main Laravel Commands</a></li><li><a href="/guide/package-commands.html" class="sidebar-link">Package Commands</a></li><li><a href="/guide/custom-commands.html" class="sidebar-link">Custom Commands</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="usage"><a href="#usage" class="header-anchor">#</a> Usage</h1> <p></p><div class="table-of-contents"><ul><li><a href="#domain">Domain</a></li><li><a href="#main-laravel-commands">Main Laravel Commands</a></li><li><a href="#package-commands">Package Commands</a></li><li><a href="#custom-commands">Custom Commands</a></li></ul></div><p></p> <h2 id="domain"><a href="#domain" class="header-anchor">#</a> Domain</h2> <p>You can create a new domain using this command:</p> <div class="language-shell extra-class"><pre class="language-shell"><code>php artisan d:create Releases
+</code></pre></div><p>You can provide a custom namespace using</p> <div class="language-shell extra-class"><pre class="language-shell"><code>php artisan d:create Releases <span class="token parameter variable">--namespace</span><span class="token operator">=</span>App<span class="token punctuation">\</span><span class="token punctuation">\</span>MyDomain
+</code></pre></div><h2 id="main-laravel-commands"><a href="#main-laravel-commands" class="header-anchor">#</a> Main Laravel Commands</h2> <p>The package provides a wrapper around most of the default laravel make commands, which are</p> <div class="language-shell extra-class"><pre class="language-shell"><code>make:model
+make:cast
+make:observer
+make:scope
+make:exception
+make:policy
+make:controller
+make:resource
+make:request
+make:rule
+make:middleware
+make:event
+make:listener
+make:channel
+make:job
+make:mail
+make:notification
+</code></pre></div><h2 id="package-commands"><a href="#package-commands" class="header-anchor">#</a> Package Commands</h2> <p>The package provides a wrapper around some popular third party commands, which are</p> <div class="language-shell extra-class"><pre class="language-shell"><code>make:data  // spatie/laravel-data
+make:filterable // thejano/laravel-filterable
+make:query-filter
+</code></pre></div><h2 id="custom-commands"><a href="#custom-commands" class="header-anchor">#</a> Custom Commands</h2> <p>The package provides some command to generate PHP classes out of the box, which are</p> <div class="language-shell extra-class"><pre class="language-shell"><code>make:action
+make:service
+</code></pre></div><br> <p>All the domain make commands start with <code>d:</code> and should have <code>-d</code> or <code>--domain</code> option.
+You can pass all default options with the command that you run.
+In case if you don't provide <code>-d</code> or <code>--domain</code> option, the command works as itself.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/installation.html" class="prev">
+        Installation
+      </a></span> <span class="next"><a href="/guide/main-laravel-commands.html">
+        Main Laravel Commands
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.521e9afe.js" defer></script><script src="/assets/js/2.845378f6.js" defer></script><script src="/assets/js/16.e5045b3b.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Custom Commands | Laravel Domain Driven Design</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    
+    <meta name="description" content="Helps to use domain driven design within laravel">
+    <meta name="theme-color" content="#0b1003">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.300f369e.css" as="style"><link rel="preload" href="/assets/js/app.521e9afe.js" as="script"><link rel="preload" href="/assets/js/2.845378f6.js" as="script"><link rel="preload" href="/assets/js/12.1b949fd3.js" as="script"><link rel="prefetch" href="/assets/js/10.91370462.js"><link rel="prefetch" href="/assets/js/11.7ae92dc3.js"><link rel="prefetch" href="/assets/js/13.d65d575f.js"><link rel="prefetch" href="/assets/js/14.bea1bdc8.js"><link rel="prefetch" href="/assets/js/15.d1e7aa94.js"><link rel="prefetch" href="/assets/js/16.e5045b3b.js"><link rel="prefetch" href="/assets/js/17.90296a9c.js"><link rel="prefetch" href="/assets/js/3.8dfc125c.js"><link rel="prefetch" href="/assets/js/4.7271c9e7.js"><link rel="prefetch" href="/assets/js/5.3da2d6a2.js"><link rel="prefetch" href="/assets/js/6.8aca83c8.js"><link rel="prefetch" href="/assets/js/7.c139746f.js"><link rel="prefetch" href="/assets/js/8.c5fdb1dd.js"><link rel="prefetch" href="/assets/js/9.e7f84cc1.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.300f369e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Laravel Domain Driven Design</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="https://github.com/thejano/laravel-domain-driven-design/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="https://github.com/thejano/laravel-domain-driven-design/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/guide/installation.html" class="sidebar-link">Installation</a></li><li><a href="/guide/usage.html" class="sidebar-link">Usage</a></li><li><a href="/guide/main-laravel-commands.html" class="sidebar-link">Main Laravel Commands</a></li><li><a href="/guide/package-commands.html" class="sidebar-link">Package Commands</a></li><li><a href="/guide/custom-commands.html" aria-current="page" class="active sidebar-link">Custom Commands</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/custom-commands.html#action" class="sidebar-link">Action</a></li><li class="sidebar-sub-header"><a href="/guide/custom-commands.html#service" class="sidebar-link">Service</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="custom-commands"><a href="#custom-commands" class="header-anchor">#</a> Custom Commands</h1> <p></p><div class="table-of-contents"><ul><li><a href="#action">Action</a></li><li><a href="#service">Service</a></li></ul></div><p></p> <h2 id="action"><a href="#action" class="header-anchor">#</a> Action</h2> <p>You can create an Action using:</p> <div class="language-shell extra-class"><pre class="language-shell"><code>php artisan d:make:action StoreReleaseAction <span class="token parameter variable">-d</span> Releases
+</code></pre></div><h2 id="service"><a href="#service" class="header-anchor">#</a> Service</h2> <p>You can create a Service using:</p> <div class="language-shell extra-class"><pre class="language-shell"><code>php artisan d:make:service SpotifyService <span class="token parameter variable">-d</span> Releases
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/package-commands.html" class="prev">
+        Package Commands
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.521e9afe.js" defer></script><script src="/assets/js/2.845378f6.js" defer></script><script src="/assets/js/12.1b949fd3.js" defer></script>
+  </body>
+</html>

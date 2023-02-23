@@ -1,0 +1,60 @@
+{
+    "name": "thejano/laravel-domain-driven-design",
+    "description": "Helps to use domain driven design within laravel",
+    "keywords": [
+        "TheJano",
+        "Laravel",
+        "Laravel DDD",
+        "Laravel ddd",
+        "ddd",
+        "DD",
+        "domain-driven-design",
+        "Domain Driven Design",
+        "domain",
+        "drivem",
+        "design",
+        "laravel-domain-driven-design"
+    ],
+    "homepage": "https://github.com/thejano/laravel-domain-driven-design",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dr Pshtiwan",
+            "email": "drpshtiwan@thejano.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^8.1|^8.2",
+        "laravel/framework": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TheJano\\LaravelDomainDrivenDesign\\": "src/"
+        }
+    },
+    "require-dev": {
+        "laravel/pint": "^1.6",
+        "phpstan/phpstan": "^1.10"
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "./vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TheJano\\LaravelDomainDrivenDesign\\LaravelDomainDrivenDesignServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+
+}

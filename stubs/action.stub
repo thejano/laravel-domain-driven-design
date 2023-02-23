@@ -1,0 +1,11 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ class }}
+{
+    public static function handle():void
+    {
+        //TODO: handle {{ class }} action
+    }
+}

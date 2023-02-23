@@ -1,0 +1,19 @@
+{
+  "name": "docs",
+  "version": "0.0.1",
+  "description": "Helps to use domain driven design within laravel",
+  "main": "index.js",
+  "authors": {
+    "name": "Dr Pshtiwan",
+    "email": "drpshtiwan@thejano.com"
+  },
+  "repository": "https://github.com/thejano/laravel-domain-driven-design/docs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
