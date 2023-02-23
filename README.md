@@ -1,7 +1,7 @@
 # Laravel Domain Driven Design
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/thejano/laravel-domain-driven-design.svg?style=flat-square)](https://packagist.org/packages/thejano/laravel-domain-driven-design)
-[![GitHub Code Style Action Status](https://github.com/thejano/laravel-domain-driven-design/actions/workflows/php-cs-fixer.yml/badge.svg)](https://github.com/thejano/laravel-domain-driven-design/actions/workflows/php-cs-fixer.yml)
+[![GitHub Code Style Action Status](https://github.com/thejano/laravel-domain-driven-design/actions/workflows/pint.yml/badge.svg)](https://github.com/thejano/laravel-domain-driven-design/actions/workflows/piny.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/thejano/laravel-domain-driven-design.svg?style=flat-square)](https://packagist.org/packages/thejano/laravel-domain-driven-design)
 
 
