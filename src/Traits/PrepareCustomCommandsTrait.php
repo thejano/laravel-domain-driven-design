@@ -14,7 +14,7 @@ trait PrepareCustomCommandsTrait
 
     protected function getNamespace(): string
     {
-        if (null !== $this->option('domain')) {
+        if ($this->option('domain') !== null) {
             return DomainHelper::getNamespace()."\\{$this->option('domain')}\\";
         }
 
@@ -28,7 +28,7 @@ trait PrepareCustomCommandsTrait
 
     protected function removeRootNamespace(?string $namespace): ?string
     {
-        if (null === $namespace) {
+        if ($namespace === null) {
             return null;
         }
 

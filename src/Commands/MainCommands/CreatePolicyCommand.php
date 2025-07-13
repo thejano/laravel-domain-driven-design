@@ -16,7 +16,7 @@ class CreatePolicyCommand extends \Illuminate\Foundation\Console\PolicyMakeComma
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        if (null !== $this->option('domain')) {
+        if ($this->option('domain') !== null) {
             $namespace = DomainHelper::getNamespace();
 
             return "{$namespace}\\{$this->option('domain')}\\Policies";
@@ -29,7 +29,7 @@ class CreatePolicyCommand extends \Illuminate\Foundation\Console\PolicyMakeComma
     {
         $domain = $this->option('domain');
 
-        $rootNamespace = null !== $domain ? DomainHelper::getFullNamespace($domain).'Models\\' : $this->rootNamespace();
+        $rootNamespace = $domain !== null ? DomainHelper::getFullNamespace($domain).'Models\\' : $this->rootNamespace();
 
         $model = ltrim($model, '\\/');
 

@@ -15,7 +15,7 @@ class CreateEventCommand extends \Illuminate\Foundation\Console\EventMakeCommand
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        if (null !== $this->option('domain')) {
+        if ($this->option('domain') !== null) {
             $namespace = DomainHelper::getNamespace();
 
             return "{$namespace}\\{$this->option('domain')}\\Events";

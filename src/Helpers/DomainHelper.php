@@ -43,7 +43,7 @@ class DomainHelper
                 ->replace('\\', '/')
                 ->explode('/')
                 ->map(
-                    fn ($name) => 'App' === $name ? strtolower($name) : $name
+                    fn ($name) => $name === 'App' ? strtolower($name) : $name
                 )
                 ->join('/');
     }

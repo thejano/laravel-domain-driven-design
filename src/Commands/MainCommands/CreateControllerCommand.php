@@ -15,7 +15,7 @@ class CreateControllerCommand extends \Illuminate\Routing\Console\ControllerMake
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        if (null !== $this->option('domain')) {
+        if ($this->option('domain') !== null) {
             $namespace = DomainHelper::getNamespace();
 
             return "{$namespace}\\{$this->option('domain')}\\Http\\Controllers";

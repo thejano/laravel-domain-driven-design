@@ -32,7 +32,7 @@ trait PrepareCommandTrait
 
         $domain = $this->option('domain');
 
-        return null !== $domain
+        return $domain !== null
         && ($this->qualifyModel($model) === "App\\Models\\{$model}" || $this->qualifyModel($model) === "App\\{$model}") ?
             DomainHelper::getNamespace()."\\{$domain}\\Models\\{$model}" :
             $this->qualifyModel($model);

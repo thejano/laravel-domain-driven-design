@@ -22,7 +22,7 @@ class CreateServiceCommand extends GeneratorCommand
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        if (null !== $this->option('domain')) {
+        if ($this->option('domain') !== null) {
             $namespace = DomainHelper::getNamespace();
 
             return "{$namespace}\\{$this->option('domain')}\\Services";

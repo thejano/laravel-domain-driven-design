@@ -26,7 +26,7 @@ class CreateQueryFilterCommand extends \Illuminate\Console\Command
     public function handle(): void
     {
         $filterable = [];
-        if (null !== $this->option('filterable')) {
+        if ($this->option('filterable') !== null) {
             $filterable = ['--filterable' => $this->option('filterable')];
         }
 

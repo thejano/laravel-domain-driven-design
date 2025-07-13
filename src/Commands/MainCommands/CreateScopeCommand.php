@@ -15,7 +15,7 @@ class CreateScopeCommand extends \Illuminate\Foundation\Console\ScopeMakeCommand
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        if (null !== $this->option('domain')) {
+        if ($this->option('domain') !== null) {
             $namespace = DomainHelper::getNamespace();
 
             $domain_path = DomainHelper::getPath($namespace.'/'.$this->option('domain'));

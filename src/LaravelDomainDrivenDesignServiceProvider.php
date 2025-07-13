@@ -60,10 +60,10 @@ class LaravelDomainDrivenDesignServiceProvider extends ServiceProvider
             'domain-driven-design'
         );
 
-//        // Register the main class to use with the facade
-//        $this->app->singleton('laravel-domain-driven-design', function () {
-//            return new LaravelDomainDrivenDesign();
-//        });
+        //        // Register the main class to use with the facade
+        //        $this->app->singleton('laravel-domain-driven-design', function () {
+        //            return new LaravelDomainDrivenDesign();
+        //        });
     }
 
     public function registeredCommands(): array

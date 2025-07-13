@@ -15,7 +15,7 @@ class CreateNotificationCommand extends \Illuminate\Foundation\Console\Notificat
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        if (null !== $this->option('domain')) {
+        if ($this->option('domain') !== null) {
             $namespace = DomainHelper::getNamespace();
 
             return "{$namespace}\\{$this->option('domain')}\\Notifications";

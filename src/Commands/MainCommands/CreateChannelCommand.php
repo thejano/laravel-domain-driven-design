@@ -15,7 +15,7 @@ class CreateChannelCommand extends \Illuminate\Foundation\Console\ChannelMakeCom
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        if (null !== $this->option('domain')) {
+        if ($this->option('domain') !== null) {
             $namespace = DomainHelper::getNamespace();
 
             return "{$namespace}\\{$this->option('domain')}\\Broadcasting";

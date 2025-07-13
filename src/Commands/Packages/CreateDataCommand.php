@@ -22,15 +22,15 @@ class CreateDataCommand extends \Illuminate\Console\Command
     public function prepareArguments(): array
     {
         $args = ['name' => $this->argument('name')];
-        if (null !== $this->option('domain')) {
+        if ($this->option('domain') !== null) {
             $args['--namespace'] = $this->removeRootNamespace($this->getDefaultNamespace());
         }
 
-        if (null !== $this->option('suffix')) {
+        if ($this->option('suffix') !== null) {
             $args['--suffix'] = $this->option('suffix');
         }
 
-        if (null !== $this->option('force')) {
+        if ($this->option('force') !== null) {
             $args['--force'] = $this->option('force');
         }
 

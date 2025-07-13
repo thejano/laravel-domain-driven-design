@@ -16,7 +16,7 @@ class CreateListenerCommand extends \Illuminate\Foundation\Console\ListenerMakeC
 
     protected function getDefaultNamespace($rootNamespace): string
     {
-        if (null !== $this->option('domain')) {
+        if ($this->option('domain') !== null) {
             $namespace = DomainHelper::getNamespace();
 
             return "{$namespace}\\{$this->option('domain')}\\Listeners";
@@ -29,7 +29,7 @@ class CreateListenerCommand extends \Illuminate\Foundation\Console\ListenerMakeC
     {
         $event = $this->option('event');
         $domain = $this->option('domain');
-        $namespace = null !== $domain ? DomainHelper::getFullNamespace($domain) : $this->laravel->getNamespace();
+        $namespace = $domain !== null ? DomainHelper::getFullNamespace($domain) : $this->laravel->getNamespace();
 
         if (! Str::startsWith(
             $event,
